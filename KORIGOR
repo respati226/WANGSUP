@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int s, i;
+    s = 0, i = 0;
+
+	do {
+        cout << "Masukkan kertas: ";
+        cin >> i;
+        s=s+i;
+
+        if (i == 10) {
+            cout << "Memasukkan " << i << " kertas" << endl << endl;
+        
+            cout << "Jumlah Kertas " << s << endl;
+            cout << "===============" << endl;
+            
+        } else {
+            cout << "Kertas yang dimasukkan kurang " << 10-i << endl;
+            cout << "Coba lagi!" << endl << endl;
+            s=s-i;
+            cout << "Jumlah Kertas " << s << endl;
+            cout << "===============" << endl;
+            
+			}
+        
+
+    }while (s < 50);
+    
+	cout << endl << "PENYIMPANAN KERTAS SUDAH PENUH! " << endl;
+	return 0;
+	
+}

@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int s, i;
+    s = 0, i = 0;
+
+    do {
+        cout << "Masukkan jumlah buku: ";
+        cin >> i;
+
+        // Periksa apakah jumlah buku ganjil
+        if (i % 2 == 0) {
+            cout << "Jumlah buku harus ganjil!" << endl;
+        } else {
+            s = s + i;
+            cout << "Jumlah buku dalam lemari: " << s << endl;
+        }
+
+    } while (s < 20);
+
+    cout << endl << "Lemari sudah penuh!" << endl;
+
+    return 0;
+}
